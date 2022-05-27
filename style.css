@@ -1,108 +1,77 @@
+body {
+  background-image: url('images/Header bg.png');
+}
 .navigator {
   display: flex;
   background-color: white;
   justify-content: flex-end;
   margin-right: 10px;
-
+  padding: 10px;
 }
-.mylogo {
+
+.mylogo{
   display: flex;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-size: 18px;
-  line-height: 20px;
+  flex-grow: 2;
   width: 76px;
   height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   align-items: center;
-  text-align: center;
   color: #6070FF;
-  order: 0;
-  flex-basis:500px;
-  flex-grow: 4;
 }
-.portoflio {
+.hamburger{
   display: flex;
-  width: 63px;
-  height: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #344563;
-
-
-}
-
-.about {
-  display: flex;
-  width: 63px;
-  height: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #344563;
-
-}
-.contact {
-  display: flex;
-  width: 63px;
-  height: 20px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #344563;
+  flex-grow: 1;
 
 }
 .container {
 
-  padding: 100px;
+  padding: 100px 50px 20px 20px;
 
 }
 .container1{
   display: flex;
-  flex-basis: 400px;
   flex-wrap: wrap;
+  flex-basis: 100px;
   flex-direction: column;
-  margin: 50px;
-  /* border: 10px solid goldenrod; */
-
+  
 }
-
 .head {
-  flex-grow: 2;
+  flex-grow: 1;
+  width: 327px;
+  height: 150px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
-
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172B4D;
 }
 
 .pr {
-  flex-grow: 2;
+  flex-grow: 1;
+  width: 327px;
+  height: 146px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   color: #344563;
+  margin: 0;
 }
 .a {
 
+  flex-grow: 1;
+  width: 117px;
+  height: 24px;
   font-family: 'Poppins';
   font-style: normal;
-  flex-grow: 1;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -113,6 +82,8 @@
 
   flex-grow: 1;
   padding-top: 20px;
+}
 
-
+.social-media-container i {
+  padding: 5px;
 }
