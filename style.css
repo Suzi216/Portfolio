@@ -1,0 +1,118 @@
+.navigator {
+  display: flex;
+  background-color: white;
+  justify-content: flex-end;
+  margin-right: 10px;
+
+}
+.mylogo {
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  width: 76px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #6070FF;
+  order: 0;
+  flex-basis:500px;
+  flex-grow: 4;
+}
+.portoflio {
+  display: flex;
+  width: 63px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+
+
+}
+
+.about {
+  display: flex;
+  width: 63px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+
+}
+.contact {
+  display: flex;
+  width: 63px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+
+}
+.container {
+
+  padding: 100px;
+
+}
+.container1{
+  display: flex;
+  flex-basis: 400px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 50px;
+  /* border: 10px solid goldenrod; */
+
+}
+
+.head {
+  flex-grow: 2;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+
+}
+
+.pr {
+  flex-grow: 2;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #344563;
+}
+.a {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+
+}
+.social-media-container  {
+
+  flex-grow: 1;
+  padding-top: 20px;
+
+
+}
