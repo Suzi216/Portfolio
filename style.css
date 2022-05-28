@@ -34,6 +34,9 @@ header {
 
 .container {
   background-image: url('images/Header bg.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-size: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100px;
@@ -78,7 +81,7 @@ header {
   line-height: 24px;
   font-family: 'Poppins', sans-serif;
   color: #7f8cff;
-  text-decoration: none;
+  margin: 0;
 }
 
 .social-media-container {
@@ -88,6 +91,5 @@ header {
 }
 
 .social-media-container li {
-  padding: 2px;
   display: inline-block;
 }
