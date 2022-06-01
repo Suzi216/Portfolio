@@ -316,8 +316,10 @@ section {
   list-style: none;
   align-items: center;
   padding: 0;
+  margin-bottom:10px; 
   background: #f7f7f9;
   border-radius: 8px;
+
 }
 
 .sk img {
