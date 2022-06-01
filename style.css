@@ -2,6 +2,10 @@ header {
   margin-top: 20px;
 }
 
+section {
+  padding: 20px;
+}
+
 .navigator {
   margin-top: 10px;
   padding: 20px;
@@ -41,7 +45,17 @@ header {
   flex-wrap: wrap;
   flex-basis: 100px;
   flex-direction: column;
-  padding-left: 5px;
+  padding-left: 15px;
+}
+
+.container_last {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100px;
+  flex-direction: column;
+  padding-left: 20px;
+  border-top-right-radius: #fff;
+  background: #fff;
 }
 
 .head {
@@ -88,8 +102,255 @@ header {
   flex-grow: 1;
   list-style: none;
   padding-left: 0;
+  padding-bottom: 10px;
 }
 
-.social-media-container li {
+.i {
   display: inline-block;
+  margin: 5px;
+}
+
+.All-section {
+  background: #e5e5e5;
+  margin: 0;
+  align-items: center;
+  display: grid;
+  gap: 50px;
+}
+
+.Job-container {
+  display: grid;
+  grid-row: auto auto auto auto;
+  justify-content: start;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  gap: 12px;
+  width: 337px;
+  height: 552px;
+  background-color: #fff;
+}
+
+.img1 {
+  width: 295px;
+  height: 220px;
+  background: url(blog_drbl_4x.png);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.tonic {
+  width: 295px;
+  height: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Jobs {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Job li {
+  flex: 1;
+}
+
+.Jobs img {
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  margin-bottom: 2px;
+  margin-right: 20px;
+}
+
+.Jobs h5 {
+  width: 88px;
+  height: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin: 0;
+  padding-right: 5px;
+}
+
+.para {
+  width: 295px;
+  height: 76px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.counter {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.counter li {
+  padding: 10px;
+}
+
+.Job1-button {
+  width: 130px;
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  letter-spacing: 0.03em;
+  background: #fff;
+  padding-right: 10px;
+  align-items: center;
+  text-align: center;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 16px;
+}
+
+.Job1-btn:hover {
+  background-color: #fff;
+}
+
+.Job2-button {
+  width: 130px;
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #fff;
+  color: #396df2;
+  padding-right: 0;
+  padding-right: 10px;
+  border: 1px solid #396df2;
+  border-radius: 16px;
+}
+
+.skill {
+  display: grid;
+  grid-row: auto auto;
+  padding-left: 20px;
+}
+
+.skill ul {
+  list-style: none;
+}
+
+.lang {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+
+.Skills {
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.lang img {
+  width: 14px;
+  height: 9px;
+}
+
+.lang h4 {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  top: calc(50% - 24px / 2);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+}
+
+.skills {
+  padding: 0;
+  padding-left: 10px;
+}
+
+.sk {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 10px;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.sk img {
+  padding-right: 10px;
+}
+
+.lang2 {
+  list-style: none;
+}
+
+.lang1 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.lang1 h4 {
+  height: 24px;
+  left: 12px;
+  right: 78px;
+  top: calc(50% - 24px / 2);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+}
+
+.lang1 img {
+  width: 7px;
+  height: 15px;
 }
