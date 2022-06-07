@@ -357,7 +357,7 @@ section {
 
 .form {
   background-image: url('images/shapes.png');
-  background-color: #0000cd;
+  background-color: #6070FF;
   border-top-left-radius: 73px;
   height: 779px;
   background-repeat: no-repeat;
@@ -369,6 +369,7 @@ section {
   overflow: hidden;
   align-content: center;
   justify-content: center;
+  margin: 0
 }
 
 .form h2 {
