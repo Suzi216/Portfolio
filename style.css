@@ -429,3 +429,24 @@ color: #B3BAC5;
 
 
 }
+.btn3{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+color: #6070FF;
+width: 140px;
+height: 48px;
+left: 24px;
+top: 5317px;
+background: #FFFFFF;
+border-radius: 6px;
+margin-top: 15px;
+}
+.btn3:hover {
+  background-color: #fff;
+}
