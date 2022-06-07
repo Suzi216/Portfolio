@@ -393,3 +393,39 @@ color: #EBEBFF;
 margin: 0;
 margin-bottom: 20px;
 }
+.form input{
+  border-radius: 8px;
+font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin: 5px;
+width: 335px;
+height: 35px;
+background: #FFFFFF;
+left: 20px;
+right: 38px;
+color: #172B4D;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+padding-left: 8px;
+}
+
+textarea{
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 350px;
+  margin-top: 10px;
+  left: 16px;
+right: 38px;
+top: 15px;
+bottom: 15px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #B3BAC5;
+
+
+}
