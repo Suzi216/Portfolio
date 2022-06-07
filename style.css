@@ -354,3 +354,42 @@ section {
   width: 7px;
   height: 15px;
 }
+.form{
+  background-image:  url('images/shapes.png');
+  background-color: #0000CD;
+  border-top-left-radius: 73px;
+  height: 779px;
+  background-repeat: no-repeat;
+  background-size: 65% 90%;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+   border: 1px solid #c6c7cc;
+   overflow: hidden;
+  align-content: center;
+  justify-content: center;
+}
+.form h2{
+
+height: 56px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 45px;
+}
+.form p{
+height: 102px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #EBEBFF;
+margin: 0;
+margin-bottom: 20px;
+}
