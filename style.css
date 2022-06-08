@@ -35,6 +35,20 @@ section {
   display: flex;
   flex-grow: 1;
 }
+.navigator ul{
+  list-style: none;
+  display: flex;
+}
+.navigator ul li{
+  flex: 0;
+  padding-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .navigator ul {
+    display: none;
+  }
+}
+
 
 .container {
   background-image: url('images/Header bg.png');
@@ -46,16 +60,6 @@ section {
   flex-basis: 100px;
   flex-direction: column;
   padding-left: 15px;
-}
-
-.container_last {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 100px;
-  flex-direction: column;
-  padding-left: 20px;
-  border-top-right-radius: #fff;
-  background: #fff;
 }
 
 .head {
@@ -120,14 +124,14 @@ section {
 
 .Job-container {
   display: grid;
-  grid-row: auto auto auto auto;
+  grid-row: auto auto;
   justify-content: start;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   align-items: center;
   align-content: center;
   padding: 20px;
-  gap: 12px;
+  gap: 15px;
   width: 337px;
   height: 552px;
   background-color: #fff;
@@ -142,7 +146,10 @@ section {
   order: 0;
   flex-grow: 0;
 }
-
+.img1 img{
+  width: 295px;
+  height: 220px;
+}
 .tonic {
   width: 295px;
   height: 36px;
@@ -355,6 +362,68 @@ section {
   height: 15px;
 }
 
+
+.container_last {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100px;
+  flex-direction: column;
+  padding-left: 20px;
+  border-top-right-radius: #fff;
+  background: #fff;
+}
+
+.container_last .head {
+  flex-grow: 1;
+  width: 327px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container_last .pr {
+  flex-grow: 1;
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 0;
+}
+
+.container_last .a {
+  flex-grow: 1;
+  width: 125px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #7f8cff;
+  margin: 0;
+}
+
+ .container_last .social-media-container {
+  flex-grow: 1;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+ .container_last .social-media-container .i {
+  display: inline-block;
+  margin: 5px;
+}
+
 .form {
   background-image: url('images/shapes.png');
   background-color: #6070ff;
@@ -453,4 +522,123 @@ textarea {
 
 .btn3:hover {
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .container{
+    flex:1;
+  }
+  .container .head {
+    width: 720px;
+    padding: 0;
+    padding-left:300px;
+    padding-top: 100px;
+    margin:0;
+ }
+  .container .pr{
+    width: 650px;
+    height: 90px;
+    padding: 0;
+    padding-left:300px;
+    margin: 0;
+
+  }
+  .container .a{
+    padding: 0;
+    margin: 0;
+    padding-left:300px;
+    padding-bottom: 10px;
+  }
+  .container .social-media-container{
+    padding-left:300px;
+    margin: 0;
+    padding-bottom: 200px;
+  }
+  .container_last .social-media-container{
+    margin: 0;
+  }
+  .container_last .Job-btn{
+  }
+  .Job-container{
+    width: 1000px;
+    margin-left:100px;
+    grid-template-columns: auto auto;
+    gap:10px;
+    justify-content: center;
+
+  }
+  .img1 {
+    height: 448px;
+    width: 544px;
+    padding-left: 60px;
+  }
+  .img1 img{
+    height: 448px;
+    width: 544px;
+  }
+
+  .side-container{
+    height: 448px;
+    width: 300px;
+    margin-left: 25px;
+  }
+  .side-container .counter{
+    padding-bottom: 20px;
+  }
+  .side-container1 .counter{
+    padding-bottom: 20px;
+  }
+  .side-container1{
+    height: 448px;
+    width: 300px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+.aboutme {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 80px;
+}
+.aboutme .container_last{
+  padding: 0;
+  margin-left: 150px;
+}
+.aboutme .Skills{
+  padding: 0;
+  padding-top: 50px;
+  margin-right: 10px;
+  width: 600px;
+
+}
+.aboutme .Skills .skills{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: flex-start;
+}
+.aboutme .Skills .skills .sk{
+  margin: 10px;
+  width: 50px;
+  height: 110px;
+
+}
+.form{
+    background-image: url('images/shapes.png');
+    background-repeat: no-repeat;
+}
+.form p{
+  width: 500px;
+  align-items: center;
+  padding-left: 400px;
+}
+.form form{
+  display: grid;
+  grid-template-row: auto auto auto auto;
+  padding-bottom: 80px;
+  padding-left: 470px;
+
+}
 }
