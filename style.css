@@ -16,7 +16,7 @@ section {
   align-items: center;
 }
 
-.mylogo {
+.navigator .mylogo {
   display: flex;
   flex-grow: 2;
   width: 76px;
@@ -40,6 +40,15 @@ section {
   list-style: none;
   display: flex;
   text-decoration: none;
+}
+.navigator ul li a{
+  color:#344563;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+
 }
 
 .navigator ul li {
@@ -125,11 +134,15 @@ a:link {
   list-style: none;
   padding-left: 0;
   padding-bottom: 10px;
+  margin-left: 0;
 }
 
 .i {
   display: inline-block;
   margin: 5px;
+}
+.i a{
+  padding: 0;
 }
 
 .All-section {
@@ -467,6 +480,7 @@ hr {
   margin: 5px;
 }
 
+
 .form {
   background-image: url('images/shapes.png');
   background-color: #6070ff;
@@ -526,7 +540,10 @@ hr {
   line-height: 20px;
   padding-left: 8px;
 }
-
+form input {
+   border: none;
+  outline: none;
+}
 textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -563,7 +580,7 @@ textarea {
   margin-top: 15px;
 }
 
-.btn3:hover {
+ form .btn3:hover {
   background-color: #fff;
 }
 
@@ -575,30 +592,35 @@ textarea {
   .container {
     flex: 1;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     align-content: center;
+
   }
 
   .container .head {
     padding: 0;
     padding-top: 130px;
     margin: 0;
+    width: 550px;
+
   }
 
   .container .pr {
     width: 550px;
     height: 130px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
   }
 
   .container .a {
-    padding-right: 200px;
+    /* padding-right: 200px; */
     padding-bottom: 10px;
+    width: 550px;
   }
 
   .container .social-media-container {
-    padding-right: 180px;
+    /* padding-right: 180px; */
     padding-bottom: 200px;
+    width: 550px;
   }
 
   .container_last .social-media-container {
@@ -615,21 +637,13 @@ textarea {
 
   .Job-container {
     width: 800px;
-
-    /* margin-left: 100px; */
+    padding: 0;
+    height: 430px;
     grid-template-columns: auto auto;
     gap: 10px;
     justify-content: center;
   }
 
-  .Job-container1 {
-    width: 800px;
-
-    /* margin-left: 100px; */
-    grid-template-columns: auto auto;
-    gap: 10px;
-    justify-content: center;
-  }
 
   .img1 {
     height: 305px;
@@ -698,20 +712,14 @@ textarea {
     background-image: url('images/shapes.png');
     background-repeat: no-repeat;
 
-    /* align-items: center; */
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
   }
-
-  .form p {
-    /* width: 500px; */
-
-    /* align-items: center; */
-
-    /* padding-left: 400px; */
+  .form p{
+    width: 600px;
+    padding-bottom: 20px;
   }
-
   .form form {
     display: flex;
     flex-direction: column;
