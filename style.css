@@ -149,9 +149,6 @@ a:link {
 .All-section {
   background: #e5e5e5;
   margin: 0;
-
-  /* grid-template-columns: 1fr;
-   grid-template-rows: 1fr  repeat(3, 352px); */
   align-items: center;
   justify-content: center;
   display: grid;
@@ -580,10 +577,12 @@ textarea {
   background: #fff;
   border-radius: 6px;
   margin-top: 15px;
+  transition: background-color 2s, transform 2s;
 }
 
-form .btn3:hover {
-  background-color: #fff;
+.btn3:hover {
+  background-color: red;
+  transform: rotate(360deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -644,6 +643,18 @@ form .btn3:hover {
   .img1 {
     height: 305px;
     width: 408px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translate(0);
+    }
+
+    to {
+      transform: translate(-2ex);
+    }
   }
 
   .img1 img {
