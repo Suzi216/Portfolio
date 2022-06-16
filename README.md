@@ -25,6 +25,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install node.js
 
+## Live Demo (if available)
+
+https://suzi216.github.io/mobile_version_skeleton/
 
 
 ## Authors
