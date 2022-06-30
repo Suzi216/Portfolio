@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Mobile Version Skeleton
+# My portofolio
 > This project is a simple project that uses html and css to design a portofolio page.
 
 
