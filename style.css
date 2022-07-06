@@ -81,6 +81,13 @@ a:link {
   }
 }
 
+header .navigator {
+  margin: 0;
+  padding-top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .container {
   background-image: url('images/Header bg.png');
   background-repeat: no-repeat;
@@ -596,6 +603,10 @@ form .btn3:hover {
     justify-content: center;
     align-items: left;
     align-content: center;
+  }
+
+  .Job1-button:hover {
+    background-color: red;
   }
 
   .container .head {
