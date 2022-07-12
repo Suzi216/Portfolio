@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo (if available)
 
-https://suzi216.github.io/Portofolio/
+[live demo](https://suzi216.github.io/Portofolio/)
 
 
 ## Authors
