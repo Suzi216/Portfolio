@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Suzana's Portofolio </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./file.js">
+    <script defer src="./file.js"></script>
   </head>
 
 
@@ -12,17 +14,27 @@
     <header>
       <section class="navigator">
           <a href="#" class="mylogo">My logo</a>
-          <nav>
-            <img src="images/Enabled.png" alt="logo" class="hamburger">
-          </nav>
-          <ul>
-            <li><a href="#">Portofolio</a></li>
-            <li> <a href="#">About</a> </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="ham">
+            <img src="images/blog_drbl_4x.png" alt="logo" class="hamburger">
+          </div>
+
+          <div class="navigator-link">
+            <ul class="nav-menu">
+
+              <li class="link"><a href="index.html#All-section">Portofolio</a></li>
+              <li class="link"> <a href="index.html#aboutme">About</a> </li>
+              <li class="link"><a href="index.html#form">Contact</a></li>
+            </ul>
+            <div class="x">
+              <img src="images/Enabled.png" alt="logo" class="x">
+            </div>
+          </div>
+
       </section>
     </header>
+<script>
 
+</script>
     <main class="container1">
 <!-- INTRODUCTION -->
       <section class="container">
@@ -38,7 +50,7 @@
         </ul>
       </section>
 <!-- WORKS -->
-      <section class="All-section" >
+      <section class="All-section" id="All-section" >
         <section class=" Job-container" >
           <div class="img1">
             <img src="images/SnapshootPortfolio.png" alt=" sideimage">
@@ -151,7 +163,7 @@
       </section>
 
 <!-- ABOUT and LANGUAGE FRAMEWORK SKILLS -->
-      <div class="aboutme">
+      <div class="aboutme" id="aboutme">
         <section class="container_last">
           <h2 class="head">About <br> Myself </h2>
           <p class="pr">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -198,7 +210,7 @@
 
 
 <!-- THE FORM -->
-      <section class="form">
+      <section class="form" id="form">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form name="form1" action="https://formspree.io/f/myyovzdk" method="post">
