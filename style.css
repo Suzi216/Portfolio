@@ -5,10 +5,12 @@ header {
 section {
   padding: 20px;
 }
-main{
+
+main {
   padding: 0;
   margin: 0;
 }
+
 .navigator {
   margin-top: 10px;
   padding: 20px;
@@ -636,16 +638,17 @@ form input {
     display: none;
   }
 
-
   .container {
     flex: 1;
     justify-content: center;
     align-items: left;
     align-content: center;
   }
+
   .Job1-button:hover {
-   background-color: red;
- }
+    background-color: red;
+  }
+
   .container .head {
     padding: 0;
     padding-top: 130px;
@@ -763,7 +766,6 @@ form input {
     background-image: url('images/shapes.png');
     background-repeat: no-repeat;
     justify-content: center;
-    align-content: center;
     align-content: center;
     flex-wrap: wrap;
   }
