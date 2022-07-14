@@ -1,3 +1,5 @@
+/* mobile version */
+/* Style header */
 header {
   margin-top: 20px;
 }
@@ -87,7 +89,7 @@ header .navigator {
   padding-left: 100px;
   padding-right: 100px;
 }
-
+/* introduction-css */
 .container {
   background-image: url('images/Header bg.png');
   background-repeat: no-repeat;
@@ -152,7 +154,7 @@ header .navigator {
   display: inline-block;
   margin: 5px;
 }
-
+/* work-section */
 .All-section {
   background: #e5e5e5;
   margin: 0;
@@ -334,7 +336,7 @@ header .navigator {
   align-items: center;
   padding: 0;
 }
-
+/* skills-section */
 .Skills {
   padding: 0;
   margin: 0;
@@ -484,7 +486,7 @@ hr {
   display: inline-block;
   margin: 5px;
 }
-
+/* contact-section */
 .form {
   background-image: url('images/shapes.png');
   background-color: #6070ff;
@@ -550,7 +552,7 @@ form input {
   padding-left: 8px;
 }
 
-textarea {
+#textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 350px;
@@ -591,7 +593,7 @@ textarea {
   background-color: red;
   transform: rotate(360deg);
 }
-
+/* Desctop version */
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -657,7 +659,7 @@ textarea {
     animation-duration: 3s;
     animation-name: slidein;
   }
-
+/* keyframes transformation */
   @keyframes slidein {
     from {
       transform: translate(0);
