@@ -124,6 +124,8 @@ a:link {
 
   .navigator-link.active {
     left: 0;
+    transition: 1s;
+    opacity: 0.9;
   }
 }
 
