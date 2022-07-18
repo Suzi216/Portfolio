@@ -4,6 +4,7 @@ const x = document.querySelector('.x');
 const container = document.querySelector('.container');
 x.addEventListener('click', () => {
   navbar.classList.toggle('active');
+  container.classList.toggle('active');
 });
 ham.addEventListener('click', () => {
   navbar.classList.toggle('active');
