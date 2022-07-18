@@ -125,8 +125,11 @@ a:link {
   .navigator-link.active {
     left: 0;
     transition: 1s;
-    opacity: 0.9;
+    opacity: 0.65;
   }
+}
+.container.active{
+  filter: blur(6px);
 }
 
 .container {
