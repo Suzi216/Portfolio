@@ -12,4 +12,5 @@ ham.addEventListener('click', () => {
 });
 document.querySelectorAll('.link').forEach((n) => n.addEventListener('click', () => {
   navbar.classList.remove('active');
+  container.classList.remove('active');
 }));
