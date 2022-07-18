@@ -4,28 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Suzana's Portofolio </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./file.js">
+    <script defer src="./file.js"></script>
   </head>
 
 
   <body>
     <header>
-      <div class="navigator">
+      <section class="navigator">
           <a href="#" class="mylogo">My logo</a>
-          <div>
-            <img src="images/Enabled.png" alt="logo" class="hamburger">
+          <div class="ham">
+            <img src="images/blog_drbl_4x.png" alt="logo" class="hamburger">
           </div>
-          <ul>
-            <li><a href="#">Portofolio</a></li>
-            <li> <a href="#">About</a> </li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-    </header>
 
+          <div class="navigator-link">
+            <ul class="nav-menu">
+
+              <li class="link"><a href="index.html#All-section">Portofolio</a></li>
+              <li class="link"> <a href="index.html#aboutme">About</a> </li>
+              <li class="link"><a href="index.html#form">Contact</a></li>
+            </ul>
+            <div class="x">
+              <img src="images/Enabled.png" alt="logo" class="x">
+            </div>
+          </div>
+
+      </section>
+    </header>
+<script>
+
+</script>
     <main>
 <!-- INTRODUCTION -->
-      <section class="container">
+      <section class="container" id="container">
         <h1 class="head">I’m Suzana <br> Glad to see you!</h1>
         <p class="pr">I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <h6 class="a">LET’S CONNECT</h6>
@@ -38,7 +50,7 @@
         </ul>
       </section>
 <!-- WORKS -->
-      <section class="All-section" >
+      <section class="All-section" id="All-section" >
         <section class=" Job-container" >
           <div class="img1">
             <img src="images/SnapshootPortfolio.png" alt=" sideimage">
@@ -136,9 +148,8 @@
              </div>
           </section>
       </section>
-
 <!-- ABOUT and LANGUAGE FRAMEWORK SKILLS -->
-      <div class="aboutme">
+      <div class="aboutme" id="aboutme">
         <section class="container_last">
           <h2 class="head">About <br> Myself </h2>
           <p class="pr">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -179,11 +190,12 @@
           <li> <hr> </li>
         </ul>
         </section>
+
       </div>
 
 
 <!-- THE FORM -->
-      <section class="form">
+      <section class="form" id="form">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form name="form1" action="https://formspree.io/f/myyovzdk" method="post">
@@ -198,6 +210,8 @@
           <button type="submit" name="submit" class="btn3">  Get It Touch </button>
         </form>
        </section>
+
     </main>
+
   </body>
 </html>

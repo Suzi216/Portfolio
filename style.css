@@ -1,11 +1,14 @@
-/* mobile version */
-/* Style header */
 header {
   margin-top: 20px;
 }
 
 section {
   padding: 20px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
 }
 
 .navigator {
@@ -38,7 +41,7 @@ section {
   flex-grow: 1;
 }
 
-.navigator ul {
+.nav-menu {
   list-style: none;
   display: flex;
   text-decoration: none;
@@ -63,7 +66,7 @@ a:link {
   padding: 0;
 }
 
-.navigator ul li a {
+.nav-menu li a {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -72,24 +75,64 @@ a:link {
   line-height: 20px;
 }
 
-.navigator ul li {
+.nav-menu li {
   flex: 0;
   text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  .navigator ul {
-    display: none;
+  .navigator-link {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    align-items: left;
+    align-content: center;
+    padding: 0;
+    padding-top: 35px;
+    margin: 0;
+    top: 0;
+    left: -100%;
+
+    /* left:0; */
+    z-index: 100;
+    width: 100%;
+    height: 580px;
+    grid-gap: 140px;
+    color: color;
+    background: rgba(255, 255, 255, 0.5);
+    background-color: blue;
+  }
+
+  .nav-menu {
+    display: flex;
+    padding: 10px;
+    padding-top: 55px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    align-content: center;
+  }
+
+  .nav-menu li a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .navigator-link.active {
+    left: 0;
+    transition: 1s;
+    opacity: 0.65;
   }
 }
 
-header .navigator {
-  margin: 0;
-  padding-top: 0;
-  padding-left: 100px;
-  padding-right: 100px;
+.container.active {
+  filter: blur(6px);
 }
-/* introduction-css */
+
 .container {
   background-image: url('images/Header bg.png');
   background-repeat: no-repeat;
@@ -154,12 +197,13 @@ header .navigator {
   display: inline-block;
   margin: 5px;
 }
-/* work-section */
+
 .All-section {
   background: #e5e5e5;
   margin: 0;
   align-items: center;
   justify-content: center;
+  align-content: center;
   display: grid;
   grid-row: auto auto auto auto;
   gap: 50px;
@@ -174,6 +218,7 @@ header .navigator {
   align-items: center;
   align-content: center;
   padding: 20px;
+  padding-left: 30px;
   gap: 15px;
   width: 337px;
   height: 552px;
@@ -336,7 +381,7 @@ header .navigator {
   align-items: center;
   padding: 0;
 }
-/* skills-section */
+
 .Skills {
   padding: 0;
   margin: 0;
@@ -486,7 +531,7 @@ hr {
   display: inline-block;
   margin: 5px;
 }
-/* contact-section */
+
 .form {
   background-image: url('images/shapes.png');
   background-color: #6070ff;
@@ -593,7 +638,7 @@ form input {
   background-color: red;
   transform: rotate(360deg);
 }
-/* Desctop version */
+
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -659,7 +704,7 @@ form input {
     animation-duration: 3s;
     animation-name: slidein;
   }
-/* keyframes transformation */
+
   @keyframes slidein {
     from {
       transform: translate(0);
