@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Mobile Version Skeleton
+# My portofolio
 > This project is a simple project that uses html and css to design a portofolio page.
 
 
@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo (if available)
 
-https://suzi216.github.io/mobile_version_skeleton/
+[live demo](https://suzi216.github.io/Portofolio/)
 
 
 ## Authors
