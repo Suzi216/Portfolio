@@ -142,6 +142,7 @@ a:link {
   flex-wrap: wrap;
   flex-basis: 100px;
   flex-direction: column;
+  align-items: center;
   padding-left: 15px;
 }
 
@@ -465,6 +466,7 @@ a:link {
   flex-basis: 100px;
   flex-direction: column;
   padding-left: 20px;
+  align-content: center;
   border-top-right-radius: #fff;
   background: #fff;
 }
@@ -639,6 +641,15 @@ form input {
   transform: rotate(360deg);
 }
 
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -774,6 +785,7 @@ form input {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .form p {
@@ -790,4 +802,5 @@ form input {
     align-content: center;
     flex-wrap: wrap;
   }
+
 }
