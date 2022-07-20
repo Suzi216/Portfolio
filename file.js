@@ -86,13 +86,13 @@ function popups(){
     };
     btns[i].addEventListener('click', () => {
       main.classList.toggle('active');
-      popup.document.style.opacity="1";
+      // popup.classList.remove('active');
     });
   }
 
   close.onclick = function () {
     popup.style.display = 'none';
-    // main.classList.toggle('active');
+    main.classList.toggle('active');
   };
 
 }

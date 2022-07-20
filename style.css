@@ -725,8 +725,11 @@ form input {
 }
 
 .main.active{
-
+  /* filter: blur(3px); */
   /* opacity: 0.65; */
+}
+.popup.active{
+  filter: blur(3px);
 }
 
 
