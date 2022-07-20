@@ -728,17 +728,9 @@ form input {
   display: inline-block;
 }
 
-.main.active {
-  /* filter: blur(3px); */
-
-  /* opacity: 0.65; */
-}
-
 .popup.active {
   filter: blur(3px);
 }
-
-
 
 /* desktop style */
 @media screen and (min-width: 768px) {
@@ -896,9 +888,7 @@ form input {
     flex-wrap: wrap;
   }
 
-
   /* popup desktop */
-
   .below-popup {
     display: flex;
     margin-top: 20px;
