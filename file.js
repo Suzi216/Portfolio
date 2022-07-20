@@ -57,10 +57,15 @@ const myProjects = [
 const popup =  document.querySelector('.popup');
 const headup =  document.querySelector('.headup');
 const img =  document.querySelector('.img1');
-const btns =  document.querySelector('.Job1-btn');
+const btn =  document.querySelector('.btn');
+const btn1 =  document.querySelector('.btn1');
+const btn2 =  document.querySelector('.btn2');
+const btn3 =  document.querySelector('.btn3');
 const parag =  document.querySelector('.below-popup');
 const close =  document.querySelector('.dis');
 const main =  document.querySelector('.main');
+const body =  document.querySelector('.body');
+btns=[btn, btn1, btn2, btn3];
 function popups(){
   const title = document.createElement("h2");
   title.className = 'tonic';
@@ -68,27 +73,29 @@ function popups(){
   image.className="img1";
   const paragraph = document.createElement("p");
 
-
-  for (let i = 0; i < 4; i++) {
-    title.innerText = myProjects[0].name;
-    image.src = `${myProjects[0].featuredImage}`;
-    paragraph.innerText = `${myProjects[0].description}`;
-  }
   headup.prepend(title);
   img.appendChild(image);
   parag.prepend(paragraph);
 
-
-  btns.onclick = function () {
-    popup.style.display = 'block';
-    // main.style.filter = blur(2px);
-  };
+  for (let i = 0; i < 4; i++) {
+    btns[i].onclick = function () {
+      title.innerText = myProjects[i].name;
+      image.src = `${myProjects[i].featuredImage}`;
+      paragraph.innerText = `${myProjects[i].description}`;
+      popup.style.display = 'block';
+    };
+    btns[i].addEventListener('click', () => {
+      main.classList.toggle('active');
+      popup.document.style.opacity="1";
+    });
+  }
 
   close.onclick = function () {
     popup.style.display = 'none';
+    main.classList.toggle('active');
   };
 
 }
 popups();
 
-console.log(myProjects[1].name)
+// console.log(btn1);
