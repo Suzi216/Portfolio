@@ -81,7 +81,7 @@ function popups(){
 
   btns.onclick = function () {
     popup.style.display = 'block';
-    // main.style.filter= blur(2px);
+    // main.style.filter = blur(2px);
   };
 
   close.onclick = function () {
