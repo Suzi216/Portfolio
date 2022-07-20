@@ -638,6 +638,7 @@ form input {
 
 .btn3:hover {
   background-color: red;
+
   /* transform: rotate(360deg); */
 }
 
@@ -651,12 +652,11 @@ form input {
 }
 
 /* popupstyle mobile */
-.popup{
-  display: flex;
+.popup {
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 0;
   background-color: #fff;
   display: none;
   position: fixed;
@@ -666,50 +666,54 @@ form input {
   top: 5%;
   bottom: 5%;
   transform: translateX(0%);
-  /* -webkit-transform: translateZ(0); */
 
+  /* -webkit-transform: translateZ(0); */
 }
-.popup .img1{
+
+.popup .img1 {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
-
 }
+
 /* .popup .img1 img{
   width: 600px;
   height: 350px;
 } */
-.headup{
+.headup {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
 }
 
-.headup img{
+.headup img {
   width: 50px;
   height: 50px;
-
 }
-.headup h2{
+
+.headup h2 {
   margin: 10px;
 }
-.popup ul{
+
+.popup ul {
   justify-content: flex-start;
   margin-bottom: 10px;
 }
+
 .popup .buttons span {
   display: flex;
   align-items: center;
+
   /* justify-content: space-around; */
 }
-
 
 .popup .buttons {
   display: flex;
   align-items: center;
   grid-gap: 20px;
+
   /* justify-content: space-around; */
 }
 
@@ -724,17 +728,19 @@ form input {
   display: inline-block;
 }
 
-.main.active{
+.main.active {
   /* filter: blur(3px); */
+
   /* opacity: 0.65; */
 }
-.popup.active{
+
+.popup.active {
   filter: blur(3px);
 }
 
 
 
- /* desktop style */
+/* desktop style */
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -891,31 +897,26 @@ form input {
   }
 
 
-/* popup desktop */
+  /* popup desktop */
 
-.below-popup{
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-  grid-gap: 20px;
-  /* position:sticky; */
+  .below-popup {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    grid-gap: 20px;
 
-}
-.side-pop{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
+    /* position:sticky; */
+  }
 
-.side-pop .counter{
-  display: grid;
-  grid-template-columns:auto auto auto;
-  grid-gap: 10px;
-}
+  .side-pop {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-
-
-
-
-
+  .side-pop .counter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
 }
