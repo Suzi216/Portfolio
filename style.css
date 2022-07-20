@@ -206,7 +206,7 @@ a:link {
   justify-content: center;
   align-content: center;
   display: grid;
-  grid-row: auto auto auto auto;
+  grid-row: auto auto auto auto auto;
   gap: 50px;
 }
 
@@ -650,6 +650,75 @@ form input {
   flex-wrap: wrap;
 }
 
+/* popupstyle mobile */
+.popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  padding: inherit;
+  left: 5%;
+  right: 5%;
+  top: 2%;
+  bottom: 2%;
+  transform: translateX(0%);
+  /* -webkit-transform: translateZ(0); */
+
+}
+.popup .img1{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.headup{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.headup img{
+  width: 50px;
+  height: 50px;
+
+}
+.headup h2{
+  margin: 10px;
+}
+.popup ul{
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.popup .buttons span {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+
+.popup .buttons {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  /* justify-content: space-around; */
+}
+
+.popup .buttons a {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  border-radius: 8px;
+  width: 146px;
+  padding: 12px 14px;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+ /* desktop style */
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -707,6 +776,8 @@ form input {
     grid-template-columns: auto auto;
     gap: 10px;
     justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .img1 {
@@ -802,5 +873,33 @@ form input {
     align-content: center;
     flex-wrap: wrap;
   }
+
+
+/* popup desktop */
+
+.below-popup{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  grid-gap: 20px;
+  /* position:sticky; */
+
+}
+.side-pop{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-pop .counter{
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 10px;
+}
+
+
+
+
+
 
 }
