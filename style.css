@@ -663,8 +663,8 @@ form input {
   padding: inherit;
   left: 7%;
   right: 7%;
-  top: 2%;
-  bottom: 2%;
+  top: 5%;
+  bottom: 5%;
   transform: translateX(0%);
   /* -webkit-transform: translateZ(0); */
 
@@ -675,7 +675,12 @@ form input {
   align-content: center;
   align-items: center;
   justify-content: center;
+
 }
+/* .popup .img1 img{
+  width: 600px;
+  height: 350px;
+} */
 .headup{
   display: flex;
   justify-content: space-between;
@@ -721,7 +726,7 @@ form input {
 
 .main.active{
 
-  opacity: 0.65;
+  /* opacity: 0.65; */
 }
 
 
