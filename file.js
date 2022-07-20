@@ -78,7 +78,11 @@ function popups() {
   parag.prepend(paragraph);
 
   for (let i = 0; i < 4; i += 1) {
+<<<<<<< HEAD
     btns[i].onclick = function fuc() {
+=======
+    btns[i].onclick = function () {
+>>>>>>> 18a0f33fad802a9a18cf54e62527edd868c237b1
       title.innerText = myProjects[i].name;
       image.src = `${myProjects[i].featuredImage}`;
       paragraph.innerText = `${myProjects[i].description}`;
