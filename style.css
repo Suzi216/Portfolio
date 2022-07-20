@@ -633,12 +633,12 @@ form input {
   background: #fff;
   border-radius: 6px;
   margin-top: 15px;
-  transition: background-color 2s, transform 2s;
+  transition: background-color 2s, transform 1s;
 }
 
 .btn3:hover {
   background-color: red;
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
 }
 
 .form form {
@@ -718,6 +718,14 @@ form input {
   text-decoration: none;
   display: inline-block;
 }
+
+.main.active{
+
+  opacity: 0.65;
+}
+
+
+
  /* desktop style */
 @media screen and (min-width: 768px) {
   .hamburger {
@@ -783,7 +791,7 @@ form input {
   .img1 {
     height: 305px;
     width: 408px;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-name: slidein;
   }
 
