@@ -740,9 +740,7 @@ form input {
 .popup.active{
   opacity:0.3;
 } */
-body > *:not(.popup) {
-  filter: blur(3px);
-}
+
 
 /* desktop style */
 @media screen and (min-width: 768px) {
