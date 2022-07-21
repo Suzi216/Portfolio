@@ -1,5 +1,3 @@
-
-
 const ham = document.querySelector('.ham');
 const navbar = document.querySelector('.navigator-link');
 const x = document.querySelector('.x');
@@ -19,26 +17,24 @@ document.querySelectorAll('.link').forEach((n) => n.addEventListener('click', ()
 
 // validation form
 
-//check if lowercase
+// check if lowercase
 
-function isLowerCase(str)
-{
-    return str == str.toLowerCase() && str != str.toUpperCase();
+function isLowerCase(str) {
+  return str === str.toLowerCase() && str !== str.toUpperCase();
 }
-
 
 // contact form button validation
-function myFunction() {
-  let email = document.getElementById("email").value;
+function myFunction(event) {
+  const email = document.getElementById('email').value;
   if (isLowerCase(email)) {
-    text = "";
+    const text = '';
   } else {
     event.preventDefault();
-    text = "Your email must be in lowercase";
+    text = 'Your email must be in lowercase';
     setTimeout(() => {
-      document.getElementById("error").textContent = '';
+      document.getElementById('error').textContent = '';
     }, 3000);
-    // console.log(email);
   }
-  document.getElementById("error").innerHTML = text;
+  document.getElementById('error').innerHTML = text;
 }
+myFunction();
