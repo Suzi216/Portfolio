@@ -64,7 +64,6 @@ const btn3 = document.querySelector('.btn3');
 const parag = document.querySelector('.below-popup');
 const close = document.querySelector('.dis');
 const main = document.querySelector('.main');
-// const body = document.querySelector('.body');
 const btns = [btn, btn1, btn2, btn3];
 function popups() {
   const title = document.createElement('h2');
@@ -86,7 +85,6 @@ function popups() {
     };
     btns[i].addEventListener('click', () => {
       main.classList.toggle('active');
-      // popup.classList.remove('active');
     });
   }
 
@@ -96,5 +94,3 @@ function popups() {
   };
 }
 popups();
-
-// console.log(btn1);
