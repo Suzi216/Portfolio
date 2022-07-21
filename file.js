@@ -18,22 +18,24 @@ document.querySelectorAll('.link').forEach((n) => n.addEventListener('click', ()
 // validation form
 
 // check if lowercase
-
+const form = document.querySelector('.form1');
 function isLowerCase(str) {
   return str === str.toLowerCase() && str !== str.toUpperCase();
 }
-
+let text = '';
 // contact form button validation
-function myFunction(event) {
+function myFunction() {
   const email = document.getElementById('email').value;
   if (isLowerCase(email)) {
-    const text = '';
+    text = '';
   } else {
-    event.preventDefault();
-    text = 'Your email must be in lowercase';
-    setTimeout(() => {
-      document.getElementById('error').textContent = '';
-    }, 3000);
+    form.addEventListener('submit', (event) => {
+      text = 'Your email must be in lowercase';
+      setTimeout(() => {
+        document.getElementById('error').textContent = '';
+      }, 3000);
+      event.preventDefault();
+    });
   }
   document.getElementById('error').innerHTML = text;
 }
