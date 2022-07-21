@@ -660,14 +660,13 @@ form input {
   background-color: #fff;
   display: none;
   position: fixed;
-  padding: 2px;
+  padding: 3%;
   /* padding: inherit; */
   left: 10%;
   right: 10%;
-  top: 3%;
-  bottom: 3%;
+  top: 2%;
+  bottom: 2%;
   transform: translateX(0%);
-
   /* -webkit-transform: translateZ(0); */
 }
 
@@ -709,6 +708,7 @@ form input {
 
 .popup .buttons span {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 
   /* justify-content: space-around; */
@@ -718,6 +718,7 @@ form input {
   display: flex;
   align-items: center;
   grid-gap: 20px;
+  padding-top: 2%;
 
   /* justify-content: space-around; */
 }
@@ -726,15 +727,21 @@ form input {
   border: 1px solid #6070ff;
   color: #396df2;
   border-radius: 8px;
-  width: 146px;
-  padding: 12px 14px;
+  width: 120px;
+  padding: 5px 5px;
   background-color: #fff;
   text-decoration: none;
   display: inline-block;
 }
-
-.popup.active {
+/*
+.body.active {
   opacity: 0.65;
+}
+.popup.active{
+  opacity:0.3;
+} */
+body > *:not(.popup) {
+  filter: blur(3px);
 }
 
 /* desktop style */
@@ -896,22 +903,40 @@ form input {
   /* popup desktop */
   .below-popup {
     display: flex;
-    margin-top: 20px;
     justify-content: space-between;
-    grid-gap: 20px;
-
-    /* position:sticky; */
+    grid-gap: 10px;
+    padding-top: 3%;
   }
 
   .side-pop {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     flex-direction: column;
+    width: 40%
   }
 
   .side-pop .counter {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
+  }
+  .popup .img1 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 62%;
+    /* object-fit: contain; */
+  }
+  .popup .img1 img{
+    width: 100%;
+    height: 100%;
+  }
+  .popup{
+    padding: 1%;
+    left: 13%;
+    right: 13%;
   }
 }
