@@ -24,19 +24,46 @@ function isLowerCase(str) {
 }
 let text = '';
 // contact form button validation
-function myFunction() {
-  const email = document.getElementById('email').value;
+// function myFunction() {
+//   const email = document.getElementById('email').value;
+//   if (isLowerCase(email)) {
+//     text = ' ';
+//   } else {
+//     form.addEventListener('submit', (event) => {
+//       text = 'Your email must be in lowercase';
+//       setTimeout(() => {
+//         document.getElementById('error').textContent = '';
+//       }, 3000);
+//       event.preventDefault();
+//     });
+//   }
+//   document.getElementById('error').innerHTML = text;
+// }
+//
+// var event=null;
+
+// function myFunction() {
+//   let email = document.getElementById("email").value;
+//   if (isLowerCase(email)) {
+//     text = " ";
+//   } else {
+//     event.preventDefault();
+//     text = "Input not Okay";
+//     // console.log(email);
+//   }
+//   document.getElementById("error").innerHTML = text;
+// }
+//
+// myFunction();
+
+form.addEventListener("submit", myFunction(event) {
+  let email = document.getElementById("email").value;
   if (isLowerCase(email)) {
-    text = ' ';
+    text = " ";
   } else {
-    form.addEventListener('submit', (event) => {
-      text = 'Your email must be in lowercase';
-      setTimeout(() => {
-        document.getElementById('error').textContent = '';
-      }, 3000);
-      event.preventDefault();
-    });
+    event.preventDefault();
+    text = "Input not Okay";
+    // console.log(email);
   }
-  document.getElementById('error').innerHTML = text;
-}
-myFunction();
+  document.getElementById("error").innerHTML = text;
+});
