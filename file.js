@@ -34,7 +34,10 @@ function myFunction() {
     text = "";
   } else {
     event.preventDefault();
-    text = "Input not Okay";
+    text = "Your email must be in lowercase";
+    setTimeout(() => {
+      document.getElementById("error").textContent = '';
+    }, 3000);
     // console.log(email);
   }
   document.getElementById("error").innerHTML = text;
