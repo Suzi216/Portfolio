@@ -31,9 +31,6 @@ function isLowerCase(str)
 function myFunction() {
   let email = document.getElementById("email").value;
   if (isLowerCase(email)) {
-    function submitForm(event){
-         event.preventDefault();
-     }
     text = "";
   } else {
     event.preventDefault();
