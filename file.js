@@ -63,7 +63,7 @@ const btn2 = document.querySelector('.btn2');
 const btn3 = document.querySelector('.btn3');
 const parag = document.querySelector('.below-popup');
 const close = document.querySelector('.dis');
-const body = document.querySelector('.body');
+const main = document.querySelector('.main');
 const btns = [btn, btn1, btn2, btn3];
 function popups() {
   const title = document.createElement('h2');
@@ -84,14 +84,14 @@ function popups() {
       popup.style.display = 'block';
     };
     btns[i].addEventListener('click', () => {
-      body.classList.toggle('active');
-      popup.classList.toggle('active');
+      main.classList.toggle('active');
+      // popup.classList.toggle('active');
     });
   }
 
   close.onclick = function fuc() {
     popup.style.display = 'none';
-    body.classList.toggle('active');
+    main.classList.toggle('active');
   };
 }
 popups();
