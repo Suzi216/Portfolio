@@ -27,7 +27,7 @@ let text = '';
 function myFunction() {
   const email = document.getElementById('email').value;
   if (isLowerCase(email)) {
-    text = '';
+    text = ' ';
   } else {
     form.addEventListener('submit', (event) => {
       text = 'Your email must be in lowercase';
