@@ -21,7 +21,7 @@ document.querySelectorAll('.link').forEach((n) => n.addEventListener('click', ()
 const myProjects = [
   {
     name: 'Tonic',
-    description: "Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description: "Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     featuredImage: 'images/SnapshootPortfolio.png',
     tech: ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveLink: 'https://suzi216.github.io/Portofolio/',
@@ -29,7 +29,7 @@ const myProjects = [
   },
   {
     name: 'Multi-Post Stories',
-    description: "Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description: "Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type  1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     featuredImage: 'images/SnapshootPortfolio1.png',
     tech: ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveLink: 'https://suzi216.github.io/Portofolio/',
@@ -38,7 +38,7 @@ const myProjects = [
 
   {
     name: 'Facebook 360',
-    description: "Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description: "Lorem Ipsum is simply dummy text ever since the 1500s, when an unknown printer took a galley of type 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     featuredImage: 'images/SnapshootPortfolio2.png',
     tech: ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveLink: 'https://suzi216.github.io/Portofolio/',

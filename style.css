@@ -660,11 +660,11 @@ form input {
   background-color: #fff;
   display: none;
   position: fixed;
-  padding: 3%;
+  padding: 0;
   left: 10%;
   right: 10%;
-  top: 2%;
-  bottom: 2%;
+  top: 1%;
+  bottom: 1%;
   transform: translateX(0%);
 }
 
@@ -753,7 +753,8 @@ form input {
   }
 
   .Job1-button:hover {
-    background-color: red;
+    background-color: #6070ff;
+    color: white;
   }
 
   .container .head {
@@ -934,7 +935,7 @@ form input {
   }
 
   .popup {
-    padding: 1%;
+    padding: 3%;
     top: 3%;
     bottom: 4%;
     left: 15%;
