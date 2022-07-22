@@ -739,7 +739,6 @@ form input {
   z-index: 9999;
 }
 
-
 /* desktop style */
 @media screen and (min-width: 768px) {
   .hamburger {
