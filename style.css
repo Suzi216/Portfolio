@@ -669,12 +669,17 @@ form input {
   background-color: #fff;
   display: none;
   position: fixed;
-  padding: 0;
+  padding: 3%;
   left: 7%;
   right: 7%;
   top: 2%;
   bottom: 2%;
   transform: translateX(0%);
+
+  /* overflow: scroll; */
+}
+
+.below-popup {
   overflow: scroll;
 }
 
