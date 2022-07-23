@@ -105,15 +105,15 @@ const errorMessage = document.getElementById('error');
 
 // check if lowercase
 function isLowerCase(str) {
-return str === str.toLowerCase() && str !== str.toUpperCase();
+  return str === str.toLowerCase() && str !== str.toUpperCase();
 }
 const errorsms = (e) => {
-if (!isLowerCase(email.value)) {
-  e.preventDefault();
-  errorMessage.textContent = 'Your Email must be lowercase';
-  setTimeout(() => {
-    errorMessage.textContent = '';
-  }, 3000);
-}
+  if (!isLowerCase(email.value)) {
+    e.preventDefault();
+    errorMessage.textContent = 'Your Email must be lowercase';
+    setTimeout(() => {
+      errorMessage.textContent = '';
+    }, 3000);
+  }
 };
 form.addEventListener('submit', errorsms);
