@@ -979,4 +979,8 @@ form input {
     right: 15%;
     overflow: inherit;
   }
+
+  .popup .buttons {
+    padding: 0;
+  }
 }
