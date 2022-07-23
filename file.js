@@ -96,3 +96,24 @@ function popups() {
   };
 }
 popups();
+
+// validation form
+
+const email = document.getElementById('email');
+const form = document.getElementById('formm');
+const errorMessage = document.getElementById('error');
+
+// check if lowercase
+function isLowerCase(str) {
+  return str === str.toLowerCase() && str !== str.toUpperCase();
+}
+const errorsms = (e) => {
+  if (!isLowerCase(email.value)) {
+    e.preventDefault();
+    errorMessage.textContent = 'Your Email must be lowercase';
+    setTimeout(() => {
+      errorMessage.textContent = '';
+    }, 3000);
+  }
+};
+form.addEventListener('submit', errorsms);

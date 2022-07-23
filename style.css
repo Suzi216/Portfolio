@@ -633,13 +633,10 @@ form input {
   background: #fff;
   border-radius: 6px;
   margin-top: 15px;
-  transition: background-color 2s, transform 1s;
 }
 
 .btn3:hover {
   background-color: red;
-
-  /* transform: rotate(360deg); */
 }
 
 .form form {
@@ -661,7 +658,6 @@ form input {
 }
 
 .popup {
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -675,13 +671,7 @@ form input {
   top: 2%;
   bottom: 2%;
   transform: translateX(0%);
-
-  /* overflow: scroll; */
 }
-
-/* .below-popup {
-  overflow: scroll;
-} */
 
 .below-popup p {
   font-family: 'Poppins', sans-serif;
@@ -719,38 +709,25 @@ form input {
 }
 
 .side-pop .counter {
-  /* grid-template-columns: auto auto auto; */
   grid-gap: 2%;
-}
-
-.headup h2 {
-  /* margin: 10px; */
 }
 
 .popup ul {
   justify-content: flex-start;
-
-  /* margin-bottom: 10px; */
 }
 
 .popup .buttons span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  /* justify-content: space-around; */
 }
 
 .popup .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* padding-left: 10px; */
   grid-gap: 20px;
   padding-top: 5%;
-
-  /* justify-content: space-around; */
 }
 
 .popup .buttons a {
@@ -962,8 +939,6 @@ form input {
     justify-content: center;
     width: 90%;
     height: 62%;
-
-    /* object-fit: contain; */
   }
 
   .popup .img1 img {
