@@ -142,6 +142,7 @@ a:link {
   flex-wrap: wrap;
   flex-basis: 100px;
   flex-direction: column;
+  align-items: center;
   padding-left: 15px;
 }
 
@@ -205,7 +206,7 @@ a:link {
   justify-content: center;
   align-content: center;
   display: grid;
-  grid-row: auto auto auto auto;
+  grid-row: auto auto auto auto auto;
   gap: 50px;
 }
 
@@ -227,7 +228,7 @@ a:link {
 
 .img1 {
   width: 295px;
-  height: 220px;
+  height: 200px;
   background: url(blog_drbl_4x.png);
   border-radius: 8px;
   flex: none;
@@ -241,7 +242,7 @@ a:link {
 }
 
 .tonic {
-  width: 295px;
+  width: 280px;
   height: 36px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -465,6 +466,7 @@ a:link {
   flex-basis: 100px;
   flex-direction: column;
   padding-left: 20px;
+  align-content: center;
   border-top-right-radius: #fff;
   background: #fff;
 }
@@ -631,14 +633,147 @@ form input {
   background: #fff;
   border-radius: 6px;
   margin-top: 15px;
-  transition: background-color 2s, transform 2s;
+  transition: background-color 2s, transform 1s;
 }
 
 .btn3:hover {
   background-color: red;
-  transform: rotate(360deg);
+
+  /* transform: rotate(360deg); */
 }
 
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* popupstyle mobile */
+
+.Popup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.popup {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  padding: 3%;
+  left: 7%;
+  right: 7%;
+  top: 2%;
+  bottom: 2%;
+  transform: translateX(0%);
+
+  /* overflow: scroll; */
+}
+
+/* .below-popup {
+  overflow: scroll;
+} */
+
+.below-popup p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 5px 0;
+  color: #344563;
+}
+
+.popup .img1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+}
+
+.headup img {
+  width: 40px;
+  height: 40px;
+}
+
+.popup .img1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.headup {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 0;
+}
+
+.side-pop .counter {
+  /* grid-template-columns: auto auto auto; */
+  grid-gap: 2%;
+}
+
+.headup h2 {
+  /* margin: 10px; */
+}
+
+.popup ul {
+  justify-content: flex-start;
+
+  /* margin-bottom: 10px; */
+}
+
+.popup .buttons span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* justify-content: space-around; */
+}
+
+.popup .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding-left: 10px; */
+  grid-gap: 20px;
+  padding-top: 5%;
+
+  /* justify-content: space-around; */
+}
+
+.popup .buttons a {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  border-radius: 8px;
+  width: 120px;
+  padding: 5px 5px;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main.active {
+  opacity: 0.67;
+  filter: blur(15px);
+}
+
+.popup.active {
+  z-index: 9999;
+}
+
+/* desktop style */
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -652,7 +787,8 @@ form input {
   }
 
   .Job1-button:hover {
-    background-color: red;
+    background-color: #6070ff;
+    color: white;
   }
 
   .container .head {
@@ -696,12 +832,14 @@ form input {
     grid-template-columns: auto auto;
     gap: 10px;
     justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .img1 {
     height: 305px;
     width: 408px;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-name: slidein;
   }
 
@@ -774,6 +912,7 @@ form input {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .form p {
@@ -789,5 +928,59 @@ form input {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+  }
+
+  /* popup desktop */
+  .below-popup {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 10px;
+    padding-top: 1%;
+  }
+
+  .below-popup p {
+    color: #344563;
+  }
+
+  .side-pop {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .side-pop .counter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+
+  .popup .img1 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 62%;
+
+    /* object-fit: contain; */
+  }
+
+  .popup .img1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup {
+    padding: 1%;
+    top: 3%;
+    bottom: 4%;
+    left: 15%;
+    right: 15%;
+    overflow: inherit;
+  }
+
+  .popup .buttons {
+    padding: 0;
   }
 }
