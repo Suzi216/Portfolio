@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My portofolio
-> This project is a simple project that uses html and css to design a portofolio page.
+# My portfolio
+> This project is a simple project that uses html and css to design a portfolio page.
 
 
 ## Built With
@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo (if available)
 
-[live demo]( https://suzi216.github.io/Portfolio/)
+
 
 
 ## Authors
